@@ -328,7 +328,99 @@ section {
 #menu-btn{
   display: none;
 }
-.book form{
+/* .book form{
     display: flex;
     flex-direction: column;
+} */
+
+/* Booking Section Styling */
+.book {
+  padding: 80px 20px;
+  background-image: url(./image/book-bg.jpg);/* Black background */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book .heading {
+  font-size: 42px;
+  text-transform: uppercase;
+  color: #fff; /* White text */
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.book .heading span {
+  color: #d1d1d1; 
+}
+
+.book form {
+  width: 100%;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.book form .box,
+.book form textarea {
+  width: 100%;
+  padding: 14px;
+  background: transparent;
+  border: 2px solid #0c0c0c;
+  color: #141414;
+  font-size: 16px;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.book form .box::placeholder,
+.book form textarea::placeholder {
+  color: #443;
+}
+
+.book form .box:focus,
+.book form textarea:focus {
+  border: var(--border);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.book form textarea {
+  resize: none;
+  height: 140px;
+}
+
+/* Button Styling */
+.book .btn {
+  background: #fff;
+  color: #000;
+  padding: 14px 0;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.book .btn:hover {
+  background: #d1d1d1;
+}
+
+/* Responsive  */
+@media (min-width: 768px) {
+  .book form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .book form textarea {
+    grid-column: span 2;
+  }
+
+  .book form .btn {
+    grid-column: span 2;
+  }
 }
