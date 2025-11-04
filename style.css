@@ -320,24 +320,20 @@ section {
 }
 
 /* for review slider */
-.review .review-slider{
+.review .review-slider {
   padding: 10rem 0;
   z-index: -1;
 }
 
-#menu-btn{
+#menu-btn {
   display: none;
 }
-/* .book form{
-    display: flex;
-    flex-direction: column;
-} */
+
 
 /* Booking Section Styling */
 .book {
   padding: 80px 20px;
-  background-image: url(./image/book-bg.jpg);/* Black background */
-  
+  background-image: url(./image/book-bg.jpg); 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -353,7 +349,8 @@ section {
 }
 
 .book .heading span {
-  color: #d1d1d1; 
+  /* color: #d1d1d1; */
+padding-bottom: 15px;
 }
 
 .book form {
@@ -379,7 +376,7 @@ section {
 
 .book form .box::placeholder,
 .book form textarea::placeholder {
-  color: #443;
+  /* color: #443; */
 }
 
 .book form .box:focus,
